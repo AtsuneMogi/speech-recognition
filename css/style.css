@@ -1,0 +1,26 @@
+body {
+    width: 100%;
+    text-align: center;
+}
+
+.button {
+    border: black 2px solid;
+    text-decoration: none;
+    color: black;
+    font-size: 50px;
+    font-family: sans-serif;
+    margin: 0 auto;
+    border-radius: 20px;
+    display: inline-block;
+    width: 240px;
+    height: 120px;
+}
+
+.button:active {
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+#languages {
+    font-size: 30px;
+}
