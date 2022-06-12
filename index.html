@@ -5,35 +5,27 @@
         <link rel="stylesheet" href="css/style.css">
         <title>Speech Recognition</title>
     </head>
-    <body>
-        <div>
-            <h1>Speech Recognition</h1>
-            <div>     
-                <select id="languages" onchange="changeLang(this);">
-                    <option value="ar-AE">Arabic</option>
-                    <option value="zh-CH">Chinese (Simplified)</option>
-                    <option value="zh-TA">Chisene (Traditional)</option>
-                    <option value="en-GB">English (UK)</option>
-                    <option value="en-US">English (US)</option>
-                    <option value="fr-FR">French</option>
-                    <option value="de-DE">German</option>
-                    <option value="hi-IN">Hindi</option>
-                    <option value="ja-JP" selected>Japanese</option>
-                    <option value="ko-KR">Korean</option>
-                    <option value="ms-MY">Malay</option>
-                    <option value="pt-PT">Portuguese</option>
-                    <option value="es-ES">Spanish</option>
-                    <option value="ta-SG">Tamil</option>
-                    <option value="th-TH">Thai</option>
-                    <option value="vi-VN">Vietnamese</option>
-                </select>
-            </div>
-            <div>
-                <button id="start" class="button" onclick="main();">Start</button>
-                <button id="stop" class="button" onclick="stopSpeeching();">Stop</button>
-            </div>
-        </div>
-        <h2 id="message">Press "Start".</h2>
+    <body onload="main();">
+        <h1>Speech Recognition</h1>
+        <select id="languages">
+            <option value="ar-AE">Arabic</option>
+            <option value="zh-CH">Chinese (Simplified)</option>
+            <option value="zh-TA">Chisene (Traditional)</option>
+            <option value="en-GB">English (UK)</option>
+            <option value="en-US">English (US)</option>
+            <option value="fr-FR">French</option>
+            <option value="de-DE">German</option>
+            <option value="hi-IN">Hindi</option>
+            <option value="ja-JP" selected>Japanese</option>
+            <option value="ko-KR">Korean</option>
+            <option value="ms-MY">Malay</option>
+            <option value="pt-PT">Portuguese</option>
+            <option value="es-ES">Spanish</option>
+            <option value="ta-SG">Tamil</option>
+            <option value="th-TH">Thai</option>
+            <option value="vi-VN">Vietnamese</option>
+        </select>
+        <h2 id="message">Say Something.</h2>
         <h1 id="content"></h1>
         <script type="text/javascript" src="js/main.js"></script>
     </body>
